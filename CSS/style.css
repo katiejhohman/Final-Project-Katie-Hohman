@@ -1,0 +1,38 @@
+.head {
+	width: auto;
+	height: 110px;
+	margin: 20px 0 0 0;
+}
+.logo {
+	width: 20%;
+	height: 112px;
+	margin: 0 0 10px 0;
+	float: left;
+} 
+
+.water {
+	width: 960px;
+	height: 400px;
+	margin: 20px;
+	clear: both;
+
+}
+.action {
+	width: 10%;
+	height: 75px;
+	margin: 5px;
+	float: right;
+	font-family: 'Jim Nightshade', cursive;
+	font-size: 30px;
+	padding-top: 40px;
+	color: #33220E;
+
+}
+
+footer {
+	width: auto;
+	height: 100px;
+	background-color: #33220E;
+	margin: 0 20px;
+	padding: 0 20px;
+}

@@ -1,38 +1,496 @@
-.head {
-	width: auto;
-	height: 110px;
-	margin: 20px 0 0 0;
+* {
+	box-sizing: border-box;
 }
-.logo {
-	width: 20%;
-	height: 112px;
-	margin: 0 0 10px 0;
-	float: left;
-} 
 
-.water {
-	width: 960px;
-	height: 400px;
+body{
+	margin: 0;
+	padding-top: 250px;
+}
+.title {
+	font-size: 38px;
+	padding: 5px;
+}
+.standard-size {
+	font-size: 15px;
+}
+li {
+	font-size: 16px;
+}
+
+.main-nav,
+.main {
+	position: relative;
+}
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+/* HEADER */
+header,
+.header-image  {
+  height: 400px;
+  padding-top: 50px;
+  background: white;
+  
+}
+.header-image {
+	background-image: url(../images/gnocchi.jpeg);
+  	background-size: cover;
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	opacity: .9;
+  	
+  	-webkit-box-shadow:
+        inset 0 0 50px #000,
+        inset 0 0 50px #000,
+        inset 0 0 50px #000;
+   
+    -moz-box-shadow:
+        inset 0 0 50px #000,
+        inset 0 0 50px #000,
+        inset 0 0 50px #000;
+   
+    box-shadow:
+        inset 0 0 50px #000,
+        inset 0 0 50px #000,
+        inset 0 0 50px #000;
+}
+.logo-header,
+.logo-header span {
+	font-family: 'Homemade Apple', cursive;
+	text-shadow: 0 1px 0 #000000, 0 2px 0 #000000,
+             0 3px 0 #000000, 0 4px 0 #000000,
+             0 5px 0 #000000, 0 6px 0 #000000,
+             0 7px 0 #000000, 0 8px 7px rgba(0, 0, 0, 0.4),
+             0 9px 10px rgba(0, 0, 0, 0.2);
+
+}
+.logo-header{
+	text-align: center;
+	font-size: 60px;
+	color: white;
+	line-height: 200px;
+	
+}
+.logo-header span {
+	font-size: 100px;
+
+}
+
+
+/*NAV*/
+.main-nav {
+	background: black;
+	height: 70px;
+	z-index: 150;
+	margin-bottom: -80px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.4);
+	width: 100%;
+	opacity: .9;
+
+
+}
+.main-nav ul {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+	display: block;
+	zoom: 1;
+
+}
+.main-nav ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.main-nav ul li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.main-nav.align-right ul li {
+  float: right;
+}
+.main-nav.align-center ul {
+  text-align: center;
+}
+.main-nav ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	padding: 10px 12px;
+	font-family: 'Nobile', sans-serif;
+	font-size: 17px;
+	position: relative;
+	border-right: 1px solid #f3f3b5;
+	border-left: 1px solid #f3f3b5;
+	-webkit-transition: color .25s;
+	-moz-transition: color .25s;
+	-ms-transition: color .25s;
+	-o-transition: color .25s;
+	transition: color .25s;
+}
+.main-nav ul li a:hover {
+  color: #f3f3b5;
+}
+.main-nav ul li a:hover:before{
+	width: 100%;
+}
+
+.main-nav ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #f3f3b5;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+.action a{
+	text-decoration: none;
+	margin: 9px;
+  	transition: .3s background-color;
+  	color: white;
+}
+
+.main-nav-scrolled {
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+/*About us main content*/
+#neighborhood-news h1,
+#update h1{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.main { 
+	background: white;
+	padding: 75px 75px 20px;
+	font-family: 'Nobile', sans-serif;
+	width: 50%;
+	float: left;
+	margin: 60px 20px;
+	
+	
+}
+
+.info-hours {
+	width: 39%;
+	float: left;
+	padding: 75px 0 75px 20px;
+	margin: 60px 20px;
+	font-family: 'Nobile', sans-serif;
+	background-color: #f3f3b5;
+}
+
+/* UpDate Sidebar*/
+/*Neighborhood News Updates*/
+#update,
+#neighborhood-news {
+	width: 20%;
+	height: 250px;
+	font-size: 14px;
+	margin: 20px;
+}
+#update {
+	border-bottom: 5px double black;
+	padding: 110px 50px 70px;
+}
+#neighborhood-news {
+	padding: 25px 50px;
+}
+
+
+/*Menu*/
+.menu {
+	width: auto;
+	background-color: black;
 	margin: 20px;
 	clear: both;
-
-}
-.action {
-	width: 10%;
-	height: 75px;
-	margin: 5px;
-	float: right;
-	font-family: 'Jim Nightshade', cursive;
-	font-size: 30px;
-	padding-top: 40px;
-	color: #33220E;
-
+	background-image: url(../images/table.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	opacity: .9;
 }
 
-footer {
+#menu-description {
+	color: white;
 	width: auto;
-	height: 100px;
-	background-color: #33220E;
-	margin: 0 20px;
-	padding: 0 20px;
+	font-size: 30px;
+	text-align: center;
+	padding: 40px 90px;
+	background-color: black;
+	opacity: .9;
+	font-family: 'Nobile', sans-serif;
+
 }
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f3f3b5;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f3f3b5;
+	box-shadow:inset 0px 1px 0px 0px #f3f3b5;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, white), color-stop(1, white));
+	background:-moz-linear-gradient(top, white 5%, white 5%, white 100%);
+	background:-o-linear-gradient(top, white 5%, white 100%);
+	background:-ms-linear-gradient(top, white 5%, white 100%);
+	background:linear-gradient(to bottom, white 5%, white 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3b5', endColorstr='#f3f3b5',GradientType=0);
+	background-color:white;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:3px;
+	border: 5px solid white;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px gray;
+	box-shadow: 8px;
+	padding: 16px;
+	margin-top: 15px;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f3f3b5), color-stop(1, #f3f3b5));
+	background:-moz-linear-gradient(top, #f3f3b5 5%, white 100%);
+	background:-webkit-linear-gradient(top, #f3f3b5 5%, white 100%);
+	background:-o-linear-gradient(top, #f3f3b5 5%, white 100%);
+	background:-ms-linear-gradient(top, #f3f3b5 5%, white 100%);
+	background:linear-gradient(to bottom, #f3f3b5 5%, white 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='white',GradientType=0);
+	background-color: white;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/*MENU Site html*/
+#menusContainer {
+	padding: 110px 50px 50px;
+}
+
+/*Gallery*/
+.gallery {
+	width: 120px;
+	height: 80px;
+	
+}
+#gallery-title {
+	text-align: center;
+	font-family: 'Nobile', sans-serif;
+	font-weight: bold;
+}
+.gallery img {
+	height: 100%;
+	width: 100%;
+	margin: 10px;
+}
+
+
+/* Contact Us*/
+.contact {
+	width: 100%;
+	padding: 20px;
+	margin: 20px;
+	clear: both;
+	font-family: 'Nobile', sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+#form-center {
+	margin: 0 auto;
+}
+form {
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+form div + div {
+    margin-top: 1em;
+}
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    border-color: #000;
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+.button {
+    padding-left: 90px; 
+}
+button {
+    margin-left: .5em;
+}
+/*Find Us*/
+.find-us {
+	font-family: 'Nobile', sans-serif;
+	padding: 10px;
+	margin: 0 auto;
+	width: 100%;
+}
+.hours {
+	float: left;
+	padding: 20px 20px 40px;
+	text-align: center;
+	background-color: #f3f3b5;
+	margin: 0 70px 10px 15px;
+}
+
+/*Footer*/
+.footer {
+	width: auto;
+	background-color: black;
+	padding: 10px 20px 0;
+	border-top: 2px solid gray;
+	clear: both;
+	box-shadow: 8px;
+	display: block;
+	height: 100px;
+}
+
+.footer-action a {
+	text-decoration: none;
+	color: white;
+	float: left;
+	margin: 10px;
+	padding-top: 20px;
+	padding-left: 40px;
+	font-family: 'Nobile', sans-serif;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 700px) {
+	.main-nav {
+		height: auto;
+		opacity: 1;
+	}
+	.logo-header,
+	.logo-header span {
+		font-family: 'Homemade Apple', cursive;
+		text-shadow: 0 1px 0 #000000, 0 2px 0 #000000,
+             0 3px 0 #000000, 0 4px 0 #000000,
+             0 5px 0 #000000, 0 6px 0 #000000,
+             0 7px 0 #000000, 0 8px 7px rgba(0, 0, 0, 0.4),
+             0 9px 10px rgba(0, 0, 0, 0.2);
+
+	}
+	.logo-header{
+		text-align: center;
+		font-size: 35px;
+		color: white;
+		line-height: 200px;
+	
+	}
+	.logo-header span {
+		font-size: 80px;
+
+	}
+	.main {
+		width: 100%;
+		padding-top: 20px;
+		margin: 80px 0 0;
+		text-align: center;
+		border: none;
+		background-color: white;
+	}
+	.info-hours {
+		width: 100%;
+		padding: 5px 0;
+		font-family: 'Nobile', sans-serif;
+		margin: 0 auto;
+		text-align: center;
+		border:none ;
+	}
+	.footer {
+		width: auto;
+		background-color: black;
+		margin: 0 20px;
+		padding: 0 20px;
+		border-top: 2px solid gray;
+		clear: both;
+		box-shadow: 8px;
+		height: 100px;
+	}
+	.find-us {
+		width: 100%;
+		font-family: 'Nobile', sans-serif;
+		padding: 10px;
+		margin: 0 auto;
+
+	}
+	.hours {
+		margin: 0 auto;
+		text-align: center;
+		border: none;
+		float: none;
+	}
+	#google-map {
+		width: 100%;
+	}
+
+}
+
+/* Hack to fix menu */
+#sp_tabs {
+	height: auto !important;
+}
+
+#menusContainer {
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
